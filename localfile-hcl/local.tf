@@ -4,3 +4,10 @@ resource "local_file" "pet" {
     content = "We all love pets, specially dogs"
   
 }
+
+resource "local_sensitive_file" "sensitive_file" {
+    filename = "/tmp/sensitive.txt"
+    file_permission = 0755
+    content = "this is a secret file"
+  
+}
