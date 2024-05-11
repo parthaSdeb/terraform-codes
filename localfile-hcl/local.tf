@@ -11,3 +11,9 @@ resource "local_sensitive_file" "sensitive_file" {
     content = "this is a secret file"
   
 }
+
+
+resource "local_file" "name" {
+  filename = "/tmp/partha.txt"
+  content = "HI, this is partha speeking!"
+}
